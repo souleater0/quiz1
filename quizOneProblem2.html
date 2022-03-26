@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Name: De Lara, Jerome R.</h1>
+    <h1>Section : BSIT 3LG1</h1>
+    <h1>Quiz Problem No : 2</h1>
+    <script>
+        const voters=
+        [
+          {name: "John Doe", isRegistered : true},
+          {name: "Nick Fury", isRegistered : false},
+          {name: "Steve Rogers", isRegistered : true},
+          {name: "Tony Stark", isRegistered : false},
+          {name: "Stephen Strange", isRegistered : false},  
+        ]
+        const nonRegisteredVoters = voters.filter(voters=>{
+            return voters.isRegistered == false;
+        })
+        const registeredVoters = voters.filter(voters=>{
+            return voters.isRegistered == true;
+        })
+        console.log("Non Registered Voters:");
+        i=0;
+        nonRegisteredVoters.forEach(nonregis=>{
+            console.log(i+1+'.)',nonregis.name+'.');
+            i++; })
+        i=0;
+        console.log("\nRegistered Voters:");
+        registeredVoters.forEach(regis=>{
+            console.log(i+1+'.)',regis.name+'.');
+            i++; })
+
+    </script>
+</body>
+</html>
